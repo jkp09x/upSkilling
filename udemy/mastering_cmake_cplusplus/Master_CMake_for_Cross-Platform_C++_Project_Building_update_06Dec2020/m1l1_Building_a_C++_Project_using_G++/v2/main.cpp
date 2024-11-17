@@ -4,7 +4,7 @@ float addition( float, float );
 float division(float, float);
 void print_result( std::string, float);
 
-main(){
+int main(){
 
 float first_no, second_no, result_add, result_div;
 

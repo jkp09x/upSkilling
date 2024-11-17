@@ -10,7 +10,7 @@ void print_result( std::string result_type, float result_value){
 	std::cout<< result_type<< " result:\t"<< result_value<< "\n";
 }
 
-main(){
+int main(){
 
 float first_no, second_no, result_add, result_div;
 
