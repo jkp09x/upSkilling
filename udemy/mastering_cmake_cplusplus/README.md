@@ -1,12 +1,12 @@
 # Master CMake for Cross-Platform C++ Project Building
 
 > **_LEARNING OBJECTIVES:_**
-* CMake Commands and Terminologies
-* Importance of Make and CMake
-* Importing and Exporting Packages
-* CMake's Scripting Mode
-* Configure Project Building using Cache Variables
-* Linking against External Libraries
+> * CMake Commands and Terminologies
+> * Importance of Make and CMake
+> * Importing and Exporting Packages
+> * CMake's Scripting Mode
+> * Configure Project Building using Cache Variables
+> * Linking against External Libraries
 
 ### Section 1: Introduction
 - Problems associated with NOT using a build system
