@@ -1,29 +1,11 @@
 [
   {
-    "title": "Mastering CMake",
+    "title": "Master CMake for Cross-Platform C++ Project Building",
     "platform": "Udemy",
     "institution": "Udemy",
-    "course_link": "https://www.udemy.com",
-    "certification_link": "https://www.udemy.com/course/master_cmake/?srsltid=AfmBOopFmH7V-gl400-XFMNaS0SgVaVezu1wg9uAcfmW1osDqz_-PFIG&couponCode=JUST4U02223",
+    "course_link": "https://www.udemy.com/share/102FPy3@NFvXG5HjZi0A0BFLuPn2ep2IfPbMq7b11jS8TA-Jnzb87LWQLv31k-JE_tQDpOH49g==/",
+    "certification_link": "",
     "completion_date": "In-Progress",
-    "skills_learned":"Maven C++"
-  },
-  {
-    "title": "Advanced Data Analytics Specialization",
-    "platform": "Coursera",
-    "institution": "Google",
-    "course_link": "https://www.coursera.org/specializations/advanced-data-analytics",
-    "certification_link": "https://www.coursera.org/specializations/advanced-data-analytics",
-    "completion_date": "Oct. 2024",
-    "skills_learned":"C++ Cmake Python"
-  },
-  {
-    "title": "Machine Learning Engineer Nanodegree",
-    "platform": "Udacity",
-    "institution": "Udacity",
-    "course_link": "https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009t",
-    "certification_link": "https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009t",
-    "completion_date": "Dec. 2023",
-    "skills_learned":"C++ Cmake"
+    "skills_learned":"Cmake"
   }
 ]
