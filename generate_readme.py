@@ -71,13 +71,15 @@ def get_skills(skills):
 # Generate README content
 readme_content = "# My Certifications\n\n"
 
-readme_content += f" | Course Name (URL) | Online Platform | Completion Date (Cert. Link) | Skills Learned |\n"
-readme_content += f" | :---------------- | :-------------- | :--------------------------- | :------------- |\n"
-for newCert in certifications:
-    if "In-Progress" == newCert['completion_date']:
-        readme_content += f" | [{newCert['title']}]({newCert['course_link']}) | {get_badge(newCert['platform'])} | {newCert['completion_date']} | {get_skills(newCert['skills_learned'])} |\n"
+readme_content += f" | Course Name (URL) | Online Platform | Completion Date (Cert. Link) | Repo Link | Skills Learned |\n"
+readme_content += f" | :---------------- | :-------------- | :--------------------------- | :-------- | :------------- |\n"
+for cert in certifications:
+    readme_content += f" | [{cert['title']}]({cert['course_link']}) | {get_badge(cert['platform'])} | "
+    if "In-Progress" == cert['completion_date']:
+        readme_content += f"{cert['completion_date']} | "
     else:
-        readme_content += f" | [{newCert['title']}]({newCert['course_link']}) | {get_badge(newCert['platform'])} | [{newCert['completion_date']}]({newCert['certification_link']}) | {get_skills(newCert['skills_learned'])} |\n"
+        readme_content += f"[{cert['completion_date']}]({cert['certification_link']}) | "
+    readme_content += f"[{cert['repo_name']}]({cert['repo_link']})| {get_skills(cert['skills_learned'])} |\n"
 
 
 # Write to README.md
