@@ -26,15 +26,13 @@
 
 By building out a few of these projects, especially moving into the medium and hard categories, you'll have a very compelling story to tell about your skills and understanding of high-performance, distributed systems in a financial context. Good luck!
 
-> #### <span style="color: orange;">This color header indicates currently worked project.</span>
-
 # PROJECT LIST
 
 ## EASY Projects
 
 _These projects are about demonstrating solid foundational coding skills, understanding data structures, and basic application design. They should be well-tested and clearly documented._
 
-#### <span style="color: orange;"> Market Data Simulator & Basic Analytics Tool (Python/Java)</span>
+### Market Data Simulator & Basic Analytics Tool
 
 - **Description:** Create a program that simulates a stream of stock or crypto prices (e.g., random walk within bounds, or reading from a static file). Store this data and then build a simple CLI or GUI to calculate basic analytics like moving averages (SMA, EMA), Bollinger Bands, or RSI over user-defined periods.
 
@@ -42,7 +40,7 @@ _These projects are about demonstrating solid foundational coding skills, unders
 
 - **Stretch Goal:** Implement the simulator as a separate thread/process producing data and another consumer process analyzing it (basic concurrency).
 
-#### Order Book Implementation (Python/Java/C++)
+### Order Book Implementation (Python/Java/C++)
 
 - **Description:** Implement a data structure for a Limit Order Book. It should support adding buy/sell limit orders, cancelling orders, and matching orders (e.g., a new incoming market order matching against resting limit orders). Keep it in-memory.
 
@@ -50,7 +48,7 @@ _These projects are about demonstrating solid foundational coding skills, unders
 
 - **Stretch Goal:** Add basic price-time priority logic for order matching.
 
-#### Simple Portfolio Tracker with SQL Backend (Python/Java + SQL)
+### Simple Portfolio Tracker with SQL Backend (Python/Java + SQL)
 
 - **Description:** Build an application that allows a user to input their stock trades (buy/sell symbol, quantity, price, date). Store these trades in a local SQL database (e.g., SQLite). The application should then be able to display the current holdings, average cost, and basic profit/loss for each position.
 
@@ -58,7 +56,7 @@ _These projects are about demonstrating solid foundational coding skills, unders
 
 - **Stretch Goal:** Integrate with a free public API (e.g., Alpha Vantage, Yahoo Finance, carefully checking usage limits) to fetch current prices and calculate real-time portfolio value.
 
-#### Configuration Management Tool (Python/Java)
+### Configuration Management Tool (Python/Java)
 
 - **Description:** Create a small utility that can read configuration settings from different sources (e.g., JSON file, environment variables, command-line arguments) and apply them to a mock application. The tool should handle different environments (dev, prod) and potentially validate configurations against a schema.
 
@@ -66,7 +64,7 @@ _These projects are about demonstrating solid foundational coding skills, unders
 
 - **Stretch Goal:** Implement a mechanism for hot-reloading configurations without restarting the mock application.
 
-#### Basic Event-Driven Logger (Python/Java/C++)
+### Basic Event-Driven Logger (Python/Java/C++)
 
 - **Description:** Develop a simple logging framework that can log messages with different severity levels (INFO, WARNING, ERROR) to multiple destinations (console, file). Implement a basic event system where different "modules" can send log events to a central logger.
 
@@ -80,7 +78,7 @@ Focus: Performance, Concurrency, Distributed Concepts, API Integration, Intermed
 
 These projects require a deeper understanding of language features, performance tuning, and the introduction of distributed system patterns.
 
-#### High-Performance Order Book & Matching Engine (C++ / Java)
+### High-Performance Order Book & Matching Engine (C++ / Java)
 
 - **Description:** Rebuild the "Order Book" project, but with a focus on performance and low-latency. Implement it in C++ or Java, ensuring minimal garbage collection impact (for Java) or efficient memory usage (for C++). Introduce multi-threading for processing incoming orders and market data concurrently. The matching logic should be highly optimized.
 
@@ -88,7 +86,7 @@ These projects require a deeper understanding of language features, performance 
 
 - **Stretch Goal:** Introduce different order types (market orders, FOK, IOC) and simulate multiple concurrent market participants.
 
-#### Real-Time Data Stream Processor with Basic Alerting (Python/Java + Kafka/RabbitMQ)
+### Real-Time Data Stream Processor with Basic Alerting (Python/Java + Kafka/RabbitMQ)
 
 - **Description:** Build a system where a data generator (e.g., the market data simulator from easy projects) publishes "ticks" to a message queue (e.g., Apache Kafka or RabbitMQ). A separate consumer application should process this stream, calculate a simple metric (e.g., 5-second moving average), and trigger an alert (e.g., print to console, send an email via a mock service) if the metric crosses a threshold.
 
@@ -96,7 +94,7 @@ These projects require a deeper understanding of language features, performance 
 
 - **Stretch Goal:** Store the processed metrics in a time-series database (e.g., InfluxDB) or SQL database for historical analysis.
 
-#### Algorithmic Trading Strategy Backtester (Python/Java)
+### Algorithmic Trading Strategy Backtester (Python/Java)
 
 - **Description:** Develop a framework to backtest simple trading strategies. The framework should read historical price data (CSV file), execute a user-defined strategy (e.g., buy when SMA(5) crosses above SMA(20), sell when it crosses below), and report performance metrics (total profit/loss, maximum drawdown, Sharpe ratio).
 
@@ -104,7 +102,7 @@ These projects require a deeper understanding of language features, performance 
 
 - **Stretch Goal:** Allow for multiple concurrent strategies to be backtested, and optimize the backtesting engine for speed.
 
-#### Distributed Task Queue with Worker Pool (Python/Java)
+### Distributed Task Queue with Worker Pool (Python/Java)
 
 - **Description:** Implement a simple distributed task queue. A "master" process or service adds tasks to a shared queue (e.g., Redis list, database table). Multiple "worker" processes pick up tasks from the queue, execute them (e.g., a mock computationally intensive task), and report results.
 
@@ -112,7 +110,7 @@ These projects require a deeper understanding of language features, performance 
 
 - **Stretch Goal:** Implement basic retry logic for failed tasks and a monitoring interface to see task status.
 
-#### RESTful API for Portfolio Management with Authentication (Python/Java + SQL)
+### RESTful API for Portfolio Management with Authentication (Python/Java + SQL)
 
 - **Description:** Build a secure RESTful API using a framework (e.g., Flask/Django for Python, Spring Boot for Java) that manages portfolios and trades. It should include user authentication (e.g., JWT), endpoints to add/view trades, create/view portfolios, and fetch basic portfolio summaries. Data should be persisted in a SQL database.
 
@@ -126,7 +124,7 @@ Focus: Full-Stack Distributed Systems, Cloud Deployment, Low-Latency, Advanced A
 
 These projects combine multiple skill sets, require thoughtful system design for scalability and reliability, and ideally involve cloud deployment.
 
-#### Low-Latency Market Data Feed Handler & Gateway (C++ / Java with messaging)
+### Low-Latency Market Data Feed Handler & Gateway (C++ / Java with messaging)
 
 - **Description:** Build a system that connects to a simulated (or real, if using a free tier API) market data source, processes raw data (e.g., FIX messages, binary feeds), normalizes it into an internal format, and then publishes it to a fan-out mechanism (e.g., multicast, high-performance messaging like ZeroMQ or Aeron) for multiple downstream consumers. Focus heavily on latency, throughput, and error handling.
 
@@ -134,7 +132,7 @@ These projects combine multiple skill sets, require thoughtful system design for
 
 - **Stretch Goal:** Implement a conflation/snapshot mechanism to reduce data volume for slower consumers, and add a web-based monitoring dashboard.
 
-#### Distributed Algorithmic Trading Platform (Python, Java/C++, Message Queue, SQL, Cloud)
+### Distributed Algorithmic Trading Platform (Python, Java/C++, Message Queue, SQL, Cloud)
 
 - **Description:** Design and implement a miniature, end-to-end algorithmic trading platform. This would involve:
     - **Market Data Service** (from Hard Project 1 or Medium Project 2) feeding normalized data.
@@ -148,7 +146,7 @@ These projects combine multiple skill sets, require thoughtful system design for
 
 - **Stretch Goal:** Deploy this entire system on AWS using Kubernetes, demonstrating CI/CD pipelines, logging (e.g., ELK stack), and monitoring (e.g., Prometheus/Grafana).
 
-#### Real-Time P&L and Risk Aggregator (Python/Java + Distributed Cache + SQL/NoSQL)
+### Real-Time P&L and Risk Aggregator (Python/Java + Distributed Cache + SQL/NoSQL)
 
 - **Description:** Build a service that aggregates positions and trades from multiple simulated sources (or your OMS from project 2), calculates real-time Profit & Loss (P&L), and key risk metrics (e.g., Delta, Gamma if you can simulate options positions). Data should be stored in a performant way (e.g., in-memory data grid like Redis or Hazelcast for current state, SQL/NoSQL for historical). Provide a REST API for querying aggregated P&L and risk.
 
@@ -156,7 +154,7 @@ These projects combine multiple skill sets, require thoughtful system design for
 
 - **Stretch Goal:** Implement scenario analysis – allowing users to query P&L/risk under hypothetical market movements.
 
-#### Containerized ETL Pipeline for Historical Data (Python/Java + AWS/Kubernetes + SQL)
+### Containerized ETL Pipeline for Historical Data (Python/Java + AWS/Kubernetes + SQL)
 - **Description:** Create an automated ETL (Extract, Transform, Load) pipeline for processing large volumes of historical market data (e.g., daily stock prices, tick data).
     - **Extract:** Pull data from an S3 bucket or external API.
     - **Transform:** Clean, validate, and enrich the data (e.g., calculate daily returns, add volume-weighted average price).
@@ -167,7 +165,7 @@ These projects combine multiple skill sets, require thoughtful system design for
 
 - **Stretch Goal:** Implement data versioning and schema migration strategies.
 
-#### Cloud-Native Microservices for Configuration and Feature Toggles (Java/Python + AWS/Kubernetes + SQL/NoSQL)
+### Cloud-Native Microservices for Configuration and Feature Toggles (Java/Python + AWS/Kubernetes + SQL/NoSQL)
 
 - **Description:** Develop a set of microservices to manage application configurations and feature toggles in a distributed environment.
     - **Config Service** (REST API) to store and retrieve application configurations.
@@ -178,15 +176,3 @@ These projects combine multiple skill sets, require thoughtful system design for
 - **Skill Showcase:** Microservices architecture, API Gateway patterns, service discovery (e.g., using Kubernetes), data persistence (SQL/NoSQL), security, resilience (circuit breakers, retries), full cloud deployment (AWS/Kubernetes).
 
 - **Stretch Goal:** Implement a UI for managing configurations and feature toggles, and add real-time updates to client applications using WebSockets or server-sent events.
-
-# Lessons Learned
-
-## [](#_Market_Data_Simulator)Market Data Simulator & Basic Analytics Tool (Python/C++)
-
-### Project Brief
-
-- **Description:** Create a program that simulates a stream of stock or crypto prices (e.g., random walk within bounds, or reading from a static file). Store this data and then build a simple CLI or GUI to calculate basic analytics like moving averages (SMA, EMA), Bollinger Bands, or RSI over user-defined periods.
-- **Skill Showcase:** Python/Java proficiency, data structures (lists, deques), basic statistical calculations, understanding of financial data concepts, command-line parsing or simple GUI.
-- **Stretch Goal:** Implement the simulator as a separate thread/process producing data and another consumer process analyzing it (basic concurrency).
-
-### Lessons Learned
