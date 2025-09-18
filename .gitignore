@@ -33,6 +33,8 @@
 
 # Jupyter Notebook
 **/*.ipynb_checkpoints/
+__pychace__
 
-# Temp Files
+# Misc. Files
 ~*
+.DS_Store
