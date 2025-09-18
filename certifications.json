@@ -9,5 +9,16 @@
     "repo_link": "https://github.com/jkp09x/upSkilling/tree/master/udemy/mastering_cmake_cplusplus/Master_CMake_for_Cross-Platform_C%2B%2B_Project_Building_update_06Dec2020",
     "completion_date": "In-Progress",
     "skills_learned":"Cmake"
+  },
+  {
+    "title": "Fundamentals of Reinforcement Learning",
+    "platform": "Coursera",
+    "institution": "Coursera",
+    "course_link": "https://www.coursera.org/learn/fundamentals-of-reinforcement-learning/home/module/2",
+    "certification_link": "",
+    "repo_name": "funamentals_of_reinforcement_learning",
+    "repo_link": "coursera/specialization_reinforcement_learning/fundamentals_of_reinforcement_learning",
+    "completion_date": "In-Progress",
+    "skills_learned":"AI/ML"
   }
 ]
