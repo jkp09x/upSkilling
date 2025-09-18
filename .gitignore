@@ -33,3 +33,6 @@
 
 # Jupyter Notebook
 **/*.ipynb_checkpoints/
+
+# Temp Files
+~*
